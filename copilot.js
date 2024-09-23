@@ -17,7 +17,51 @@ function ExecuteScript() {
         else if (${Program} === "MDLC") {
         cells[2].value = "Minnesota Disability Law Center"} 
         else {cells[2].value = "Mid-Minnesota Legal Aid"}
-    cells[3].value = ${faxNumber};
+    let faxNumberCoverSheet;
+    switch (${faxNumber}) {
+        case 500418:
+            faxNumberCoverSheet = "(612)334-3402";
+            break;
+        case 501682:
+            faxNumberCoverSheet = "(320)253-9208";
+            break;
+        case 412639:
+            faxNumberCoverSheet = "(612)446-5773"
+            break;
+        case 412637:
+            faxNumberCoverSheet = "(612)446-5772";
+            break;
+        case 409742 :
+            faxNumberCoverSheet = "(218)722-7885";
+            break;
+        case 411531 :
+            faxNumberCoverSheet = "(507)322-1001";
+            break;
+        case 500420 :
+            faxNumberCoverSheet = "(612)436-0499";
+            break;
+        case 412641 :
+            faxNumberCoverSheet = "(612)446-5800";
+            break;
+        case 410421 :
+            faxNumberCoverSheet = "(612)334-5755";
+            break;
+        case 500419 :
+            faxNumberCoverSheet = "(612)332-4668";
+            break;
+        case 410180 :
+            faxNumberCoverSheet = "(320)407-0410";
+            break;
+        case 412435 :
+            faxNumberCoverSheet = "(320)253-5794";
+            break;
+        case 410631 :
+            faxNumberCoverSheet = "(651 )222-0745";
+            break;
+        default:
+            break;
+    }
+    cells[3].value = faxNumberCoverSheet;
     cells[4].checked = true;
     cells[5].checked = true;
     cells[7].checked = true;
